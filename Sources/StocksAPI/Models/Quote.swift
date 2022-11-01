@@ -43,7 +43,7 @@ public struct Quote: Codable, Identifiable, Hashable {
     public let marketState: String?
     public let fullExchangeName: String?
     public let displayName: String?
-    public let symbol: String?
+    public let symbol: String
     public let regularMarketPrice: Double?
     public let regularMarketChange: Double?
     public let regularMarketChangePercent: Double?
@@ -67,7 +67,7 @@ public struct Quote: Codable, Identifiable, Hashable {
     public let trailingAnnualDividendYield: Double?
     public let epsTrailingTwelveMonths: Double?
     
-    public init(currency: String? = nil, marketState: String? = nil, fullExchangeName: String? = nil, displayName: String? = nil, symbol: String? = nil, regularMarketPrice: Double? = nil, regularMarketChange: Double? = nil, regularMarketChangePercent: Double? = nil, regularMarketChangePreviousClose: Double? = nil, postMarketPrice: Double? = nil, postMarketPriceChange: Double? = nil, regularMarketOpen: Double? = nil, regularMarketDayHigh: Double? = nil, regularMarketDayLow: Double? = nil, regularMarketVolume: Double? = nil, trailingPE: Double? = nil, marketCap: Double? = nil, fiftyTwoWeekLow: Double? = nil, fiftyTwoWeekHigh: Double? = nil, averegeDailyVolume3Month: Double? = nil, trailingAnnualDividendYield: Double? = nil, epsTrailingTwelveMonths: Double? = nil) {
+    public init(currency: String? = nil, marketState: String? = nil, fullExchangeName: String? = nil, displayName: String? = nil, symbol: String, regularMarketPrice: Double? = nil, regularMarketChange: Double? = nil, regularMarketChangePercent: Double? = nil, regularMarketChangePreviousClose: Double? = nil, postMarketPrice: Double? = nil, postMarketPriceChange: Double? = nil, regularMarketOpen: Double? = nil, regularMarketDayHigh: Double? = nil, regularMarketDayLow: Double? = nil, regularMarketVolume: Double? = nil, trailingPE: Double? = nil, marketCap: Double? = nil, fiftyTwoWeekLow: Double? = nil, fiftyTwoWeekHigh: Double? = nil, averegeDailyVolume3Month: Double? = nil, trailingAnnualDividendYield: Double? = nil, epsTrailingTwelveMonths: Double? = nil) {
         self.currency = currency
         self.marketState = marketState
         self.fullExchangeName = fullExchangeName
